@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Image Search Application</title>
+</head>
+<body>
+	<h1 class="mt-10 mb-10 text-center text-xl font-bold capitalize heading dark:text-white md:text-3xl lg:text-5xl"> <span>Image Find</span> - <span>Your Visual Search Companion</span> </h1>
+
+	<form  class="mb-14 flex items-center justify-center">
+		<input type="text" name="search-box" id="searchInput" placeholder="Enter a search keyword..." class="ml-5 w-full max-w-lg rounded-lg border border-solid border-slate-300 px-5 placeholder:italic shadow-lg transition-all duration-500 py-2.5 focus:ring-slate-500 dark:placeholder:text-gray-400 dark:bg-slate-800">
+		<button id="searchButton" class="mr-5 cursor-pointer rounded-lg border-solid border-slate-300 bg-slate-300 px-5 text-lg text-slate-700 shadow-lg transition-all duration-500 py-2.5 ml-2.5 hover:bg-slate-700 hover:text-slate-300 dark:bg-slate-600 dark:text-slate-400">
+			Search
+		</button>
+	</form>
+
+	<main class="my-0 flex w-full flex-wrap justify-between search--results px-2.5 lg:p-16">
+		<div class="search--result ">
+			<img loading="lazy" src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG91c2UlMjBleHRlcmlvcnxlbnwwfHwwfHx8MA%3D%3D" alt="Image villa">
+			<a href="https://unsplash.com/photos/white-and-brown-concrete-building-under-blue-sky-during-daytime-_TPTXZd9mOo" target="_blank">Suburban Mansion</a>
+		</div>
+		<div class="search--result">
+			<img loading="lazy" src="https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="City mansion">
+			<a href="https://unsplash.com/photos/white-and-blue-concrete-building-tVzyDSV84w8" target="_blank">City Mansion</a>
+		</div>
+		<div class="search--result">
+			<img loading="lazy" src="https://images.unsplash.com/photo-1628624747271-4df6ca1e1ba3?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Countryside mansion">
+			<a href="https://unsplash.com/photos/red-and-white-house-with-green-grass-lawn-xRihZSjAW2k" target="_blank">Countryside Mansion</a>
+		</div>
+	</main>
+	<button id="show-more--button" class="mx-auto my-4 block hidden cursor-pointer rounded-lg border-none bg-blue-400 px-5 text-center text-lg text-slate-50 shadow-lg transition-all duration-500 show-more--button py-2.5 hover:bg-blue-600">Show more</button>
+
+	<script src="main.js"></script>
+</body>
+</html>
